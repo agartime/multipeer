@@ -16,4 +16,5 @@ profile
 *.moved-aside
 DerivedData
 .idea/
-multipeer/Pods/
+/multipeer/Podfile.lock
+/multipeer/Pods/
