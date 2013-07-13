@@ -12,6 +12,17 @@ multipeer gives an easy way to understand what are those new classes and interfa
 multipeer works using bluetooth and Wifi communications (P2P) and you need several devices to test it (it also works in the simulator).
 
 --
+Usage:
+------
+
+multipeer is using cocoapods for managing its dependant libraries. You should install *pods* from: http://cocoapods.org
+After that, just type in the project top folder:
+
+    pod install
+
+and you're done!
+
+--
 
 Give me your feedback at: antoniogartime@gmail.com
 
