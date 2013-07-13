@@ -1,0 +1,19 @@
+PODS:
+  - AFNetworking (1.3.1)
+  - Facebook-iOS-SDK (3.5.3)
+  - NSData+Base64 (1.0.0)
+  - Parse (1.2.10):
+    - Facebook-iOS-SDK (~> 3.5.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 1.2)
+  - NSData+Base64
+  - Parse
+
+SPEC CHECKSUMS:
+  AFNetworking: 9ec8aafb9269236a7630bd8d9838ce2ba30fa2a0
+  Facebook-iOS-SDK: c11e851555d8cb8b55853ec2990b01d9e343d09e
+  NSData+Base64: 36c4e5b6479259c1a68866ccd2a8dd385c9744f7
+  Parse: f678a56974e34a2549c21eabb0dcbad309b270b1
+
+COCOAPODS: 0.19.1
