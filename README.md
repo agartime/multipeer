@@ -12,5 +12,7 @@ multipeer gives an easy way to understand what are those new classes and interfa
 multipeer works using bluetooth and Wifi communications (P2P) and you need several devices to test it (it also works in the simulator).
 
 Give me your feedback at: antoniogartime@gmail.com
-Get in touch with me: es.linkedin.com/in/antoniogartime/en
+
+Get in touch with me: http://es.linkedin.com/in/antoniogartime/en
+
 Follow me on GitHub!
