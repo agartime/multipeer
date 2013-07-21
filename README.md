@@ -2,7 +2,7 @@ multipeer
 =========
 
 iOS 7 - Multipeer.Framework sample
-
+(In Development)
 --
 
 multipeer is just a sample about one of the new frameworks available in iOS 7 (Multipeer.framework).
