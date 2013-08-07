@@ -39,7 +39,7 @@
         self.peers = [[NSMutableArray alloc] initWithCapacity:1];
         NSUUID * uuid = [NSUUID UUID];
         
-        self.myPeer = [[MPPeer alloc] init];
+        _myPeer = [[MPPeer alloc] init];
         MCPeerID *myPeerId = [[MCPeerID alloc] initWithDisplayName:[uuid UUIDString]];
         self.myPeer.peerId = myPeerId;
         self.myPeer.deviceType = [UIDevice currentDevice].model;
@@ -64,26 +64,17 @@
 
 - (void)browser:(MCNearbyServiceBrowser *)browser foundPeer:(MCPeerID *)peerID withDiscoveryInfo:(NSDictionary *)info {
     NSLog(@"MCNearbyServiceABrowserDelegate :: foundPeer :: PeerID : %@ :: DiscoveryInfo : %@",peerID,info.description);
-    NSLog(@"Creamos sesión automáticamente");
-        
+    
     MPPeer *peer = [[MPPeer alloc] init];
     peer.peerId = peerID;
     peer.deviceType=[info objectForKey:@"deviceType"]; //TODO: Crear clase discoveryInfo para evitar esto...
     peer.userName = [info objectForKey:@"userName"];
     peer.idString = [peerID valueForKey:@"idString"];
     
-    if ([peer.userName isEqualToString:@"46417594Y"]) {
-        peer.profileImage = [UIImage imageNamed:@"john.jpeg"];
-    } else if ([peer.userName isEqualToString:@"39172214V"]) {
-        peer.profileImage = [UIImage imageNamed:@"harrison.jpeg"];
-        
-    } else  if ([peer.userName isEqualToString:@"27237757F"]) {
-        peer.profileImage = [UIImage imageNamed:@"ringo.jpg"];
-        
-    } else  if ([peer.userName isEqualToString:@"49352011Z"]) {
-        peer.profileImage = [UIImage imageNamed:@"mcartney.jpeg"];
+    if (![self isKnownDeviceWithIdString:peer.idString]) {
+        [self.peers addObject:peer];
+        [self.peerViewDelegate didFoundPeer:peer];
     }
-    
     
     if (![self isKnownDeviceWithIdString:peer.idString]) {
         [self.peers addObject:peer];
@@ -93,8 +84,6 @@
     if (!peer.idString) {
         peer.idString=@"TestDevice";
     }
-    
-    //[self.browser invitePeer:peerID toSession:self.session withContext:[@"HOLA" dataUsingEncoding:NSUTF8StringEncoding] timeout:10];
 }
 
 - (void)browser:(MCNearbyServiceBrowser *)browser lostPeer:(MCPeerID *)peerID {
@@ -177,9 +166,6 @@
         [arr removeObjectAtIndex:i];
         [NSThread sleepForTimeInterval:3];
     }
-    
-    
-    //    self.advertiser = [[MPAdvertiser alloc] initWithPeerId:self.myPeer.peerId andDiscoveryInfo:[self.myPeer getDiscoveryDictionary] andServiceType:kServiceType];
 }
 
 - (void) replacePeerAtIndexPath:(NSIndexPath *) fromIndexPath toIndexPath:(NSIndexPath *) toIndexPath {
@@ -197,9 +183,6 @@
     NSString *contextString = [[NSString alloc] initWithData:context encoding:NSUTF8StringEncoding];
     NSLog(@"Invitation Context: %@", contextString);
     
-    // if ([contextString isEqualToString:kSessionInvitationContext]) { //AutoAceptamos nuestro contexto por ser conocido por la aplicacion
-    invitationHandler(TRUE, [self.advertiser getMCSession]);
-    // }
 }
 
 - (void) changePeerAtIndex:(NSInteger) index setConnectedTo:(BOOL) connected {

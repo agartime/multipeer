@@ -24,11 +24,11 @@
 
 - (id)initWithPeerId:(MCPeerID *) peerId andDiscoveryInfo:(NSDictionary *)discoveryInfo andServiceType:(NSString *)serviceType {
     if (self = [super init]) {
-        self.session = [[MPSession alloc] initWithPeerId:peerId];
-        self.session.delegate=self;
-        self.advertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:peerId discoveryInfo:discoveryInfo serviceType:serviceType];
-        self.advertiser.delegate = self;
-        [self.advertiser startAdvertisingPeer];
+        _session = [[MPSession alloc] initWithPeerId:peerId];
+        _session.delegate=self;
+        _advertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:peerId discoveryInfo:discoveryInfo serviceType:serviceType];
+        _advertiser.delegate = self;
+        [_advertiser startAdvertisingPeer];
     }
     return self;
 }

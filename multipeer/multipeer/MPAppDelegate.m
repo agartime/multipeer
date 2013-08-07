@@ -7,11 +7,14 @@
 //
 
 #import "MPAppDelegate.h"
+#import "MPP2PFacade.h"
 
 @implementation MPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [[MPP2PFacade sharedInstance] getPeerCount];
     // Override point for customization after application launch.
     return YES;
 }

@@ -17,9 +17,8 @@
 
 - (id)initWithPeerId:(MCPeerID *)peerId {
     if (self = [super init]) {
-        self.session = [[MCSession alloc] initWithPeer:peerId securityIdentity:nil encryptionPreference:MCEncryptionNone]; //No Encryption? Come on, it's just a sample!! :)
-        
-        self.session.delegate = self;
+        _session = [[MCSession alloc] initWithPeer:peerId securityIdentity:nil encryptionPreference:MCEncryptionNone]; //No Encryption? Come on, it's just a sample!! :)
+        _session.delegate = self;
     }
     return self;
 }
@@ -30,11 +29,10 @@
     NSLog(@"MCSessionDelegate :: didReceiveData :: Received %@ from %@",[data description],peerID);
     [self.delegate session:session didReceiveData:data fromPeer:peerID];
     
-    /*
+    
      NSString * message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
      UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Received Message" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
      [alert show];
-     */
 }
 
 - (void)session:(MCSession *)session didReceiveResourceAtURL:(NSURL *)resourceURL fromPeer:(MCPeerID *)peerID {

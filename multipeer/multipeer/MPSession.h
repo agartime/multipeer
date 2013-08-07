@@ -10,7 +10,7 @@
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 #import "MPSessionDelegate.h"
 
-@interface MPSession : NSObject
+@interface MPSession : NSObject <MCSessionDelegate>
 @property id <MPSessionDelegate> delegate;
 
 - (id) initWithPeerId:(MCPeerID *)peerId;
