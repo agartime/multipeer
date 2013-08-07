@@ -15,7 +15,6 @@
 		B918DD38179190B400AAAAE7 /* MPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B918DD37179190B400AAAAE7 /* MPAppDelegate.m */; };
 		B918DD3B179190B400AAAAE7 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B918DD39179190B400AAAAE7 /* Main_iPhone.storyboard */; };
 		B918DD3E179190B400AAAAE7 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B918DD3C179190B400AAAAE7 /* Main_iPad.storyboard */; };
-		B918DD41179190B400AAAAE7 /* MPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B918DD40179190B400AAAAE7 /* MPViewController.m */; };
 		B918DD43179190B400AAAAE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B918DD42179190B400AAAAE7 /* Images.xcassets */; };
 		B918DD4A179190B400AAAAE7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B918DD49179190B400AAAAE7 /* XCTest.framework */; };
 		B918DD4B179190B400AAAAE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B918DD27179190B400AAAAE7 /* Foundation.framework */; };
@@ -31,6 +30,12 @@
 		B918DD7717919C1900AAAAE7 /* MPGetInfoResponseMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B918DD7617919BDE00AAAAE7 /* MPGetInfoResponseMessage.m */; };
 		B918DD7E17919D9600AAAAE7 /* MPPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = B918DD7D17919D9600AAAAE7 /* MPPeer.m */; };
 		B918DD7F17919E1600AAAAE7 /* MPP2PFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = B918DD7A17919CF300AAAAE7 /* MPP2PFacade.m */; };
+		B94145CA17B2C7E0005EFCCF /* MPPictureSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94145C917B2C7E0005EFCCF /* MPPictureSelectionViewController.m */; };
+		B94145CD17B2C813005EFCCF /* MPWhoIsNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94145CC17B2C813005EFCCF /* MPWhoIsNearViewController.m */; };
+		B94145D217B2CAE8005EFCCF /* ServiceCircleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B94145D117B2CAE8005EFCCF /* ServiceCircleCollectionViewCell.m */; };
+		B94145D517B2CB8A005EFCCF /* CircledCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B94145D417B2CB8A005EFCCF /* CircledCollectionViewLayout.m */; };
+		B94145D617B2CEE1005EFCCF /* github.gif in Resources */ = {isa = PBXBuildFile; fileRef = B918DD811791A2C300AAAAE7 /* github.gif */; };
+		B94145D817B2CF1A005EFCCF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94145D717B2CF1A005EFCCF /* MapKit.framework */; };
 		EB937B7377624EC4B101778A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C673A77AA4D4A46A25BB5A7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,8 +64,6 @@
 		B918DD37179190B400AAAAE7 /* MPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPAppDelegate.m; sourceTree = "<group>"; };
 		B918DD3A179190B400AAAAE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B918DD3D179190B400AAAAE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		B918DD3F179190B400AAAAE7 /* MPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPViewController.h; sourceTree = "<group>"; };
-		B918DD40179190B400AAAAE7 /* MPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPViewController.m; sourceTree = "<group>"; };
 		B918DD42179190B400AAAAE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B918DD48179190B400AAAAE7 /* multipeerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = multipeerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B918DD49179190B400AAAAE7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -88,6 +91,15 @@
 		B918DD7C17919D9600AAAAE7 /* MPPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPPeer.h; path = P2P/MPPeer.h; sourceTree = "<group>"; };
 		B918DD7D17919D9600AAAAE7 /* MPPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPPeer.m; path = P2P/MPPeer.m; sourceTree = "<group>"; };
 		B918DD811791A2C300AAAAE7 /* github.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = github.gif; sourceTree = "<group>"; };
+		B94145C817B2C7E0005EFCCF /* MPPictureSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPPictureSelectionViewController.h; path = ViewControllers/MPPictureSelectionViewController.h; sourceTree = "<group>"; };
+		B94145C917B2C7E0005EFCCF /* MPPictureSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPPictureSelectionViewController.m; path = ViewControllers/MPPictureSelectionViewController.m; sourceTree = "<group>"; };
+		B94145CB17B2C813005EFCCF /* MPWhoIsNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPWhoIsNearViewController.h; path = ViewControllers/MPWhoIsNearViewController.h; sourceTree = "<group>"; };
+		B94145CC17B2C813005EFCCF /* MPWhoIsNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPWhoIsNearViewController.m; path = ViewControllers/MPWhoIsNearViewController.m; sourceTree = "<group>"; };
+		B94145D017B2CAE8005EFCCF /* ServiceCircleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceCircleCollectionViewCell.h; path = UI/ServiceCircleCollectionViewCell.h; sourceTree = "<group>"; };
+		B94145D117B2CAE8005EFCCF /* ServiceCircleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceCircleCollectionViewCell.m; path = UI/ServiceCircleCollectionViewCell.m; sourceTree = "<group>"; };
+		B94145D317B2CB8A005EFCCF /* CircledCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircledCollectionViewLayout.h; path = UI/CircledCollectionViewLayout.h; sourceTree = "<group>"; };
+		B94145D417B2CB8A005EFCCF /* CircledCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircledCollectionViewLayout.m; path = UI/CircledCollectionViewLayout.m; sourceTree = "<group>"; };
+		B94145D717B2CF1A005EFCCF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94145D817B2CF1A005EFCCF /* MapKit.framework in Frameworks */,
 				B918DD601791953100AAAAE7 /* MultipeerConnectivity.framework in Frameworks */,
 				B918DD2A179190B400AAAAE7 /* CoreGraphics.framework in Frameworks */,
 				B918DD2C179190B400AAAAE7 /* UIKit.framework in Frameworks */,
@@ -139,6 +152,7 @@
 		B918DD26179190B400AAAAE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B94145D717B2CF1A005EFCCF /* MapKit.framework */,
 				B918DD5F1791953100AAAAE7 /* MultipeerConnectivity.framework */,
 				B918DD27179190B400AAAAE7 /* Foundation.framework */,
 				B918DD29179190B400AAAAE7 /* CoreGraphics.framework */,
@@ -152,6 +166,8 @@
 		B918DD2D179190B400AAAAE7 /* multipeer */ = {
 			isa = PBXGroup;
 			children = (
+				B94145C717B2C7AB005EFCCF /* ViewControllers */,
+				B94145CE17B2CAA3005EFCCF /* UI */,
 				B918DD801791A28200AAAAE7 /* Images */,
 				B918DD7817919CDA00AAAAE7 /* Facades */,
 				B918DD6A1791999B00AAAAE7 /* Messages */,
@@ -160,8 +176,6 @@
 				B918DD37179190B400AAAAE7 /* MPAppDelegate.m */,
 				B918DD39179190B400AAAAE7 /* Main_iPhone.storyboard */,
 				B918DD3C179190B400AAAAE7 /* Main_iPad.storyboard */,
-				B918DD3F179190B400AAAAE7 /* MPViewController.h */,
-				B918DD40179190B400AAAAE7 /* MPViewController.m */,
 				B918DD42179190B400AAAAE7 /* Images.xcassets */,
 				B918DD2E179190B400AAAAE7 /* Supporting Files */,
 			);
@@ -245,6 +259,28 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		B94145C717B2C7AB005EFCCF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B94145C817B2C7E0005EFCCF /* MPPictureSelectionViewController.h */,
+				B94145C917B2C7E0005EFCCF /* MPPictureSelectionViewController.m */,
+				B94145CB17B2C813005EFCCF /* MPWhoIsNearViewController.h */,
+				B94145CC17B2C813005EFCCF /* MPWhoIsNearViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B94145CE17B2CAA3005EFCCF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B94145D017B2CAE8005EFCCF /* ServiceCircleCollectionViewCell.h */,
+				B94145D117B2CAE8005EFCCF /* ServiceCircleCollectionViewCell.m */,
+				B94145D317B2CB8A005EFCCF /* CircledCollectionViewLayout.h */,
+				B94145D417B2CB8A005EFCCF /* CircledCollectionViewLayout.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94145D617B2CEE1005EFCCF /* github.gif in Resources */,
 				B918DD3E179190B400AAAAE7 /* Main_iPad.storyboard in Resources */,
 				B918DD43179190B400AAAAE7 /* Images.xcassets in Resources */,
 				B918DD3B179190B400AAAAE7 /* Main_iPhone.storyboard in Resources */,
@@ -380,14 +417,17 @@
 				B918DD7F17919E1600AAAAE7 /* MPP2PFacade.m in Sources */,
 				B918DD7717919C1900AAAAE7 /* MPGetInfoResponseMessage.m in Sources */,
 				B918DD7117919A8900AAAAE7 /* MPMessageConstants.m in Sources */,
+				B94145CA17B2C7E0005EFCCF /* MPPictureSelectionViewController.m in Sources */,
 				B918DD661791981600AAAAE7 /* MPAdvertiser.m in Sources */,
 				B918DD34179190B400AAAAE7 /* main.m in Sources */,
 				B918DD7E17919D9600AAAAE7 /* MPPeer.m in Sources */,
+				B94145CD17B2C813005EFCCF /* MPWhoIsNearViewController.m in Sources */,
 				B918DD7417919B2B00AAAAE7 /* MPGetInfoRequestMessage.m in Sources */,
-				B918DD41179190B400AAAAE7 /* MPViewController.m in Sources */,
 				B918DD6D179199BE00AAAAE7 /* MPStandardMessage.m in Sources */,
 				B918DD69179198A900AAAAE7 /* MPSession.m in Sources */,
+				B94145D517B2CB8A005EFCCF /* CircledCollectionViewLayout.m in Sources */,
 				B918DD38179190B400AAAAE7 /* MPAppDelegate.m in Sources */,
+				B94145D217B2CAE8005EFCCF /* ServiceCircleCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

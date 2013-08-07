@@ -9,6 +9,8 @@ multipeer is just a sample about one of the new frameworks available in iOS 7 (M
 
 multipeer gives an easy way to understand what are those new classes and interfaces (MCNearbyServiceBrowser, MCNearbyServiceAdvertiser, etc.); and how you can construct in a simple way great multipeer apps using simple NSDictionary or JSON structured messages.
 
+![multipeer App Image](https://raw.github.com/Artime/multipeer/master/multipeer/multipeer/app_image.png)
+
 multipeer works using bluetooth and Wifi communications (P2P) and you need several devices to test it (it also works in the simulator).
 
 --
