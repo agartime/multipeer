@@ -31,3 +31,7 @@ Give me your feedback at: antoniogartime@gmail.com
 Get in touch with me: http://es.linkedin.com/in/antoniogartime/en
 
 Follow me on GitHub!
+
+--
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Artime/multipeer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
